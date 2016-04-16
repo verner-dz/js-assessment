@@ -40,7 +40,6 @@ exports.arraysAnswers = {
     for(var j = 0; j < newArr.length; j++){
       if(newArr[j] === item){
         newArr.splice(j, 1);
-
       }
     }
     return newArr;
