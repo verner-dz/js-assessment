@@ -18,8 +18,7 @@ exports.asyncAnswers = {
   },
 
   manipulateRemoteData : function(url) {
-    return $.getJSON(url, function(data){
-    }).then(function(data) {
+    return $.getJSON(url).then(function(data) {
       var nameArr = [];
       for(var i = 0; i < data['people'].length; i++) {
         nameArr.push(data['people'][i]["name"]);
